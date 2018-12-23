@@ -20,7 +20,20 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+* show current working directory path, pwd
+* creating a directory, mkdir
+* deleting a directory, rmdir
+* creating a file using `touch` command, touch filename.txt
+* deleting a file, rm
+* renaming a file, mv oldfilename newfilename
+* listing hidden files, ls -lah OR ls -a
+* copying a file from one directory to another, cp sourcedir newdir
+* help for any particular command, man typecmdhere
+* Locate, locate -i *red*house**city*
+        --> -i indicates to look for a file unspecific of capitalization
+        --> "*" is a wildcard
+
 
 ---
 
@@ -35,7 +48,15 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+See here for more info: https://linux.die.net/man/1/ls
+`ls`, lists files and directories with no additional details
+`ls -a`, lists files and directories and shows hidden files
+`ls -l`, use a long listing format
+`ls -lh`, use shortened memory units names
+`ls -lah`, combines ls l a and h. most comprehensive view
+`ls -t`, sort by modification time, newest to oldest
+`ls -Glp`, displays results in... some way. Haven't figured out what is special about this just yet*
 
 ---
 
@@ -43,7 +64,13 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+-x, prints results transposed
+-t, prints results by newest first (based on timestamp). Currently I am not sure what the difference is between this and -c.
+-1, prints each file/item one row at a time
+-lah, prints all files and most details (includes hidden files)
+-d, displays only directories
+
 
 ---
 
@@ -51,7 +78,9 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > In the terminal, you can use xargs bashFuncName 
+Each command needs to be delimited by a " ". I'm uncertain why one would use xargs vs just calling the bash function directly.
+
 
  
 
